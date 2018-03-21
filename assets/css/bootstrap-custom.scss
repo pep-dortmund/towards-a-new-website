@@ -207,3 +207,18 @@ a.icon:hover {
         padding-top: 2rem;
     }
 }
+
+#cookie-hint {
+    width: 100%;
+    top: 56px;
+    position: fixed;
+    z-index: 5;
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
