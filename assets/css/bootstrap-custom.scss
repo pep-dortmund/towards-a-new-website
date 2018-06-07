@@ -209,13 +209,14 @@ a.icon:hover {
 }
 
 #cookie-hint {
-    width: 100%;
     top: 56px;
-    position: fixed;
-    z-index: 5;
+    background: var(--primary);
+    padding: 5px;
+    color: var(--light);
+    line-height: 31px;
 
-    .container {
-        margin-top: 1rem;
+    span {
+        float: right;
     }
 
     p:last-child {
