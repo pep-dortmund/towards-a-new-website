@@ -9,7 +9,7 @@ $theme-colors: (
   "light": #f1f0f0,
 );
 $body-bg: mix(#B7B6B6, #FFFFFF, 20%);
-$font-family-base: "Fira Sans", sans-serif;
+$font-family-base: "Roboto", sans-serif;
 
 @import "bootstrap";
 
@@ -21,9 +21,16 @@ $font-family-base: "Fira Sans", sans-serif;
     margin-top: 6rem;
 }
 
-.bg-faded .nav-link {
-    color: #FFFFFF !important;
-    transition: color 500ms;
+.bg-faded {
+    .nav-link {
+        color: #FFFFFF !important;
+        transition: color 500ms;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: var(--dark);
+    }
+
 };
 .bg-dark .nav-link {
     transition: color 500ms;
