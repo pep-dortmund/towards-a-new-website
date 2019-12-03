@@ -20,6 +20,9 @@ then
 	bundle exec jekyll build -d ~/out --config _uberspace_config.yml
 	# upload site
 	rsync -rq --links --delete --exclude=".*" ~/out/ $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+	# upload to vps
+	cd ~/out
+	find . -type f | xargs -I'{}' -t curl -u $UPLOAD_USER:$UPLOAD_PASSWORD --http1.1 -T '{}' $UPLOAD_SERVER'{}'
 else
 	echo "NOT ON MASTER BRANCH, WILL NOT DEPLOY SITE"
 fi
