@@ -2,7 +2,7 @@
 set -e # exit with nonzero exit code if anything fails
 
 # clear and re-create the out directory
-if [[ $TRAVIS_BRANCH == 'master' ]] && [[ $TRAVIS_PULL_REQUEST = false ]]
+if [[ $TRAVIS_BRANCH == 'upload-contabo' ]] && [[ $TRAVIS_PULL_REQUEST = false ]]
 then
 	# add remote ssh-key to key-storage
 	# first add remote host to known hosts
@@ -22,7 +22,7 @@ then
 	rsync -rq --links --delete --exclude=".*" ~/out/ $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
 	# upload to vps
 	cd ~/out
-	find . -type f | xargs -I'{}' -t curl -u $UPLOAD_USER:$UPLOAD_PASSWORD --http1.1 -T '{}' $UPLOAD_SERVER'{}'
+	find . -type f | xargs -I'{}' curl -u $UPLOAD_USER:$UPLOAD_PASSWORD --http1.1 -T '{}' $UPLOAD_URL'{}'
 else
 	echo "NOT ON MASTER BRANCH, WILL NOT DEPLOY SITE"
 fi
