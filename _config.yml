@@ -23,5 +23,5 @@ paginate_path: "/archive/page:num/"
 sass:
   style: compressed
 
-collections: 
+collections:
     - faq

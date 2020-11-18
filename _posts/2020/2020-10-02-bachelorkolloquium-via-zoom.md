@@ -4,6 +4,7 @@ title: Bachelor-Kolloquium I WS 2020/2021
 categories: bachelorkolloquium veranstaltungen
 image:
 author: Arne
+share: facebook
 ---
 
 Das Bachelor-Kolloquium findet im kommenden Semester digital via Zoom statt.

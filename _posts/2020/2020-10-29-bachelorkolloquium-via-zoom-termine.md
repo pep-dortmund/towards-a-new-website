@@ -4,6 +4,7 @@ title: Bachelor-Kolloquium I WS 2020/2021 - Termine
 categories: bachelorkolloquium veranstaltungen
 image:
 author: Arne
+share: facebook
 ---
 Donnerstags, 10-11 Uhr, via Zoom-Videokonferenz
 

@@ -57,3 +57,9 @@ Changes to the inputfiles are recognised and the website is build again,
 press f5 in the browser to update.
 
 Some updates, like changing images might require to delete the cache (ctrl + r in chrome).
+
+# Social feeds
+
+Taken from [this post](https://eduardoboucas.com/blog/2015/04/28/sharing-jekyll-posts-on-social-media-using-front-matter-and-ifttt.html)
+
+See also on [github](https://github.com/eduardoboucas/jekyll-social)
